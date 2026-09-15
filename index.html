@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <h2>Task Manager</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="hero">
+            <h1>My Task Manager</h1>
+
+            <p>
+                Manage your daily tasks easily with this simple
+                and interactive task management application.
+            </p>
+        </section>
+
+
+        <!-- Task Manager -->
+        <section class="task-section">
+
+            <h2>Task Manager</h2>
+
+            <!-- Add Task -->
+            <form id="taskForm">
+
+                <label for="taskInput">Enter Task</label>
+
+                <div class="task-input-container">
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task..."
+                        required
+                    >
+
+                    <button type="submit">
+                        Add Task
+                    </button>
+                </div>
+
+            </form>
+
+
+            <!-- Filters -->
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-filter="all">
+                    All
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="active">
+                    Active
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="completed">
+                    Completed
+                </button>
+
+            </div>
+
+
+            <!-- Tasks -->
+            <div id="taskList"></div>
+
+
+            <!-- Task Count -->
+            <p id="taskCount">
+                0 tasks remaining
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!---Footer -->
+    <footer>
+        <p>&copy; 2026 My Task Manager. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
