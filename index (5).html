@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="dashboard">
+
+            <h1>Weather Dashboard</h1>
+
+            <p class="subtitle">
+                Search live weather by city
+            </p>
+
+            <form id="weatherForm" class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                    aria-label="City name"
+                    required
+                >
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+            <p id="status" class="status"></p>
+
+
+            <section id="weatherCard" class="weather-card hidden">
+
+                <div class="location">
+
+                    <h2 id="cityName">--</h2>
+
+                    <p id="countryName">--</p>
+
+                </div>
+
+
+                <div class="temperature">
+
+                    <span id="temperature">--</span>°C
+
+                </div>
+
+
+                <div class="metrics">
+
+                    <div class="metric">
+
+                        <span>💧</span>
+
+                        <strong id="humidity">--</strong>
+
+                        <small>Humidity</small>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>💨</span>
+
+                        <strong id="windSpeed">--</strong>
+
+                        <small>Wind Speed</small>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>☁️</span>
+
+                        <strong id="weatherCode">--</strong>
+
+                        <small>Condition</small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
