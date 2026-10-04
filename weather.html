@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<header class="weather-header">
+    <h1>Real-Time Weather Dashboard</h1>
+    <p>Asynchronous JavaScript &amp; RESTful APIs</p>
+</header>
+
+<main class="weather-container">
+
+    <section class="search-section">
+        <h2>Search Weather</h2>
+
+        <form id="weatherForm">
+            <label for="cityInput">Enter City Name</label>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="e.g. Nashik, Mumbai, London"
+                    required
+                >
+                <button type="submit" id="searchButton">
+                    Search
+                </button>
+            </div>
+        </form>
+
+        <p id="status" class="status" aria-live="polite"></p>
+    </section>
+
+    <section id="weatherResult" class="weather-result" hidden>
+
+        <h2 id="cityName">Weather</h2>
+        <p id="location"></p>
+
+        <div class="weather-cards">
+
+            <article class="weather-card">
+                <span>🌡️</span>
+                <h3>Temperature</h3>
+                <p id="temperature">--</p>
+            </article>
+
+            <article class="weather-card">
+                <span>💧</span>
+                <h3>Humidity</h3>
+                <p id="humidity">--</p>
+            </article>
+
+            <article class="weather-card">
+                <span>💨</span>
+                <h3>Wind Speed</h3>
+                <p id="windSpeed">--</p>
+            </article>
+
+            <article class="weather-card">
+                <span>☁️</span>
+                <h3>Condition</h3>
+                <p id="condition">--</p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Weather Dashboard | Open-Meteo API</p>
+</footer>
+
+<script src="weather.js"></script>
+</body>
+</html>
